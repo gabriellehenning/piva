@@ -1,0 +1,76 @@
+/* Navbar Styles */
+body, html {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+.navbar {
+    background: transparent;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.navbar-menu {
+    background: rgba(0, 0, 0, 0);
+    z-index: 1001;
+    position: relative;
+}
+
+.navbar-item {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgb(0, 0, 0);
+    transition: color 0.3s ease;
+}
+
+.navbar-item:hover {
+    color: #ffd700 !important;
+}
+
+/* Section Styles */
+.container {
+    padding-top: 1.5rem;
+}
+
+h1, h2, h3, .custom-title, .custom-subtitle, .custom-h3 {
+    color: white !important;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.custom-subtitle {
+    font-family: Arial, sans-serif;
+    color: #666;
+}
+
+.custom-button-container {
+    margin-top: 1em;
+}
+
+.custom-button {
+    color: #ffff00;
+    background-color: blanchedalmond;
+    border-radius: 25px;
+    padding: 10px 20px;
+}
+
+/* Mobile Styles */
+@media screen and (max-width: 768px) {
+    .content {
+        padding-top: 4rem;
+    }
+}
+
+
+.navbar-menu.is-active {
+    transform: translateX(0);
+    position: absolute;
+    right: 0;
+}@media (max-width: 768px) {
+    .navbar {
+        padding: 0 20px;
+    }
+}
