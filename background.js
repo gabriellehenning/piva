@@ -3,15 +3,16 @@ document.addEventListener('DOMContentLoaded', function () {
       el: "body",
       mouseControls: true,
       touchControls: true,
-      gyroControls: false,
-      minHeight: 200.00,
-      minWidth: 200.00,
+      gyroControls: true,
+      minHeight: 400.00,
+      minWidth: 400.00,
       scale: 1.00,
       scaleMobile: 1.00,
-      color: 0xffb000,
-      color2: 0xffb000,
+      color: "#ffd700",
+      color2: "#ffd700",
       backgroundColor: 0x000000,
       spacing: 40.00,
-      showLines: false
+      showLines: false,
   });
 });
+

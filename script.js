@@ -28,3 +28,28 @@ navbarLinks.forEach(link => {
         navbarMenu.classList.remove('menu-active');
     });
 });
+
+/* Efeito typewrite */
+
+var i = 0;
+var txt = 'Seja bem vindo'; /* O texto que você quer que apareça como se estivesse sendo digitado */
+var typingSpeed = 80; /* A velocidade de digitação */
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.querySelector('.custom-title').innerHTML = txt.slice(0, i) + '<span class="cursor"></span>';
+    i++;
+    setTimeout(typeWriter, typingSpeed);
+  } else if (i === txt.length) {
+    setTimeout(() => {
+      document.querySelector('.custom-title').innerHTML = txt; // remove o cursor
+      setTimeout(() => {
+        document.querySelector('.custom-title').innerHTML = txt + ' <span class="emoji">👍</span>'; // adiciona o emoji de 'joia' com a classe 'emoji'
+      }, typingSpeed * 10);
+    }, typingSpeed);
+  }
+}
+
+typeWriter();
+
+
